@@ -21,7 +21,7 @@ for(i=1;i<=m;i++){
   i1 = bal * r;
   p1 = pay - i1;
   bal= bal - p1;
-  out = out +"<tr><td>"+i+"</td><td>"+pay.toFixed(2)+"</td><td>"+p1.toFixed(2)+"</td><td>"+i1.toFixed(2)+"</td><td>"+bal.toFixed(2)+"</td></tr>";
+  out = out +"<tr><td>"+i+"</td><td>"+pay+"</td><td>"+p1.toFixed(2)+"</td><td>"+i1.toFixed(2)+"</td><td>"+bal.toFixed(2)+"</td></tr>";
 
 }
 $("#amortization-table tbody").html(out);
