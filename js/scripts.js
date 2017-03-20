@@ -34,9 +34,5 @@ function calcPayment(principal, interest_rate, num_months){
     payment = payment / (interestCalc - 1);
     return payment;
 }
-function generate_table(m,){
-for(i=0;i<m;i++){
-  $("#app").append("<tr></tr>")
 
-}
-}
+});
