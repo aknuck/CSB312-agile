@@ -43,4 +43,13 @@ body{
 
 h1 {
      text-shadow: 0px 3px 4px rgba(0,0,0,.4);
+     display: inline-block;
+     font-size: 3.5em !important;
+    vertical-align: middle;
+}
+
+img {
+    display: inline-block;
+    width: 250px;
+    margin: 0 1em;
 }
