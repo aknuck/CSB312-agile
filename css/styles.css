@@ -20,3 +20,20 @@ body{
 .form-horizontal{
     margin: 15px;
 }
+
+.primary-color {
+    background: #00548E;
+}
+
+.primary-color-text {
+    background: #00548E;
+}
+
+.accent-color {
+    background: #ED7924;
+}
+
+
+.accent-color-text {
+    color: #ED7924;
+}
