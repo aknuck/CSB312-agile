@@ -21,7 +21,7 @@ for(i=1;i<=m;i++){
   i1 = bal * r;
   p1 = pay - i1;
   bal= bal - p1;
-  out = out +"<tr><td>"+i+"</td><td>"+pay+"</td><td>"+p1+"</td><td>"+i1+"</td><td>"+bal+"</td></tr>";
+  out = out +"<tr><td>"+i+"</td><td>"+pay.toFixed(2)+"</td><td>"+p1.toFixed(2)+"</td><td>"+i1.toFixed(2)+"</td><td>"+bal.toFixed(2)+"</td></tr>";
 
 }
 $("#amortization-table tbody").html(out);
@@ -29,14 +29,10 @@ $("#amortization-table tbody").html(out);
 
 
 function calcPayment(principal, interest_rate, num_months){
-  console.log(principal);
     var interestCalc = Math.pow((1 + interest_rate), num_months);
-    console.log(interest_rate);
     var payment = interest_rate*principal*interestCalc;
-    console.log(num_months);
     payment = payment / (interestCalc - 1);
-    console.log(payment);
-;    return payment;
+;    return payment.toFixed(2);
 }
 
 
