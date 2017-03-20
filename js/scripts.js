@@ -3,8 +3,8 @@ $(document).ready(function () {
 $("#submitBtn").click(function() {
     sum = 0;
     var p = parseInt($("#principal").val());
-    var r = parseInt($("#intrest_rate").val());
-    var n = parseInt($("#num_months").val());
+    var r = parseFloat($("#interest_rate").val());
+    var m = parseInt($("#num_months").val());
     var ins = parseInt($("#annual_insurance").val());
     var t = parseInt($("#annual_tax").val());
     var pay = calcPayment(p, r,m);
@@ -29,9 +29,15 @@ $("#amortization-table tbody").html(out);
 
 
 function calcPayment(principal, interest_rate, num_months){
+  console.log(principal);
     var interestCalc = Math.pow((1 + interest_rate), num_months);
+    console.log(interest_rate);
     var payment = interest_rate*principal*interestCalc;
+    console.log(num_months);
     payment = payment / (interestCalc - 1);
-    return payment;
+    console.log(payment);
+;    return payment;
 }
-}
+
+
+});
